@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajout Agenda</title>
+    <link href="http://fonts.googleapis.com/css?family=Bitter"  rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="agenda.css">
+</head>
+
+<body>
+    <header class="menu">
+        <ul class="top_nav">
+            <li><a href="agenda.html">Agenda</a></li>
+            
+        </ul>
+
+        <p>lundi, 05 Octobre, 2020</p>
+    </header>
+
+    <main>        
+        <div class="form-style-10">
+            <h1>Ajout Agenda<span>Enregistrer Activité</span></h1>
+            
+                <form action="agenda.html" method="POST">
+
+                        <div class="section"><span>1</span>Jour & plage horaire</div>
+                        <div class="inner-wrap">
+                            <label for="date">Date/heure <input type="datetime-local" id="date" name="date" required /></label>
+                        </div>
+                    
+
+                        <div class="section"><span>2</span>Jours / semaines</div>
+                        <div class="inner-wrap">
+
+                            Lundi<input type="checkbox" id="lundi" name="lundi" value="lundi" />
+                            Mardi<input type="checkbox" id="mardi" name="mardi" value="mardi" />
+                            Mercredi<input type="checkbox" id="mercredi" name="mercredi" value="mercredi" />
+                            Jeudi<input type="checkbox" id="jeudi" name="jeudi" value="jeudi" />
+                            Vendredi<input type="checkbox" id="vendredi" name="vendredi" value="vendredi" />
+                            Samedi<input type="checkbox" id="samedi" name="samedi" value="samedi" />
+                            Dimanche<input type="checkbox" id="dimanche" name="dimanche" value="dimanche" />
+                        </div>
+                        <br />
+                        <div class="inner-wrap">
+
+                            Semaine-1<input type="checkbox" id="sem1" name="sem1" value="sem1" />
+                            Semaine-2<input type="checkbox" id="sem2" name="sem2" value="sem2" />
+                            Semaine-3<input type="checkbox" id="sem3" name="sem3" value="sem3" />
+                            Semaine-4<input type="checkbox" id="sem4" name="sem4" value="sem4" />
+                        </div>
+
+                    
+
+                    
+
+                    <div class="section"><span>3</span>Avec qui?</div>
+                    <div class="inner-wrap">
+                        <label for="nom">Nom <input type="text" id="nom" name="nom" required /></label>
+                        
+                    </div>
+
+                    <div class="section"><span>4</span>Présentation</div>
+                    <div class="inner-wrap">
+                        <label for="activite">Intitulé
+                            <select class="activite" id="activite" name="activite" required>
+                                <option value="rdv">Rendez-vous</option>
+                                <option value="repas">Repas</option>
+                                <option value="reunion">Reunion</option>
+                                <option value="yoga">Yoga</option>
+                                <option value="sortie">Sortie</option>
+                                
+                            </select></label>
+
+
+                        <label for="Description">Description <textarea id="Description"
+                                name="Description"></textarea></label>
+                    </div>
+
+                    
+
+                    <div class="button-section">
+                        <input type="submit" name="submit" />
+                    </div>
+                </form>
+        </div>
+    </main>
+
+    <footer id="footer">
+
+        <p>Copyright © 2020 Maurin Keryann.</p>
+
+    </footer>
+</body>
+
+</html>
