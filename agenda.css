@@ -5,6 +5,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: rgba(137, 43, 226, 0.774);
 }
 
 .heure-repas{
@@ -18,6 +19,10 @@ body {
 
 .rdv{
     background: #35b15abb;
+}
+
+.trajet{
+    background: rgba(255, 0, 0, 0.582);
 }
 
 .repas{
@@ -282,24 +287,19 @@ header{
 
 
 
-#footer {
+.footer {
     display: flex;
     width: 100%;
-    padding: 10px;
+    height: 100%;
+    align-items: center;
+    text-align: center;
     background-color: #2ea9e2;
     color: #ccc
 }
-
-.copyright {
-    float: left;
-    width: 50%;
-    padding-top: 5px;
-    padding-right: 5px;
-    text-align: left
-}
-
-.copyright a {
-    color: white;
+.footer p{
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 a {
